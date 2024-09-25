@@ -18,7 +18,6 @@ export const states = pgTable("states", {
   updatedAt: timestamp("updated_at").defaultNow(),
 });
 
-// Markets Table
 export const markets = pgTable(
   "markets",
   {
