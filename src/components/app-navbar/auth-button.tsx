@@ -64,8 +64,6 @@ export default function AuthButton({ minimal = true }: { minimal?: boolean }) {
           callbackUrl: "/profile",
         })
       }
-      color="danger"
-      variant="ghost"
     >
       <IconBrandGoogle />
       Sign In

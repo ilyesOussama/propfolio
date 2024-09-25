@@ -7,7 +7,10 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier src/ --write",
-    "db:migrate": "cross-env DB_MIGRATING=true drizzle-kit migrate"
+    "db:migrate": "cross-env DB_MIGRATING=true drizzle-kit migrate",
+    "db:generate": "drizzle-kit generate --config=drizzle.config.ts",
+    "db:push": "drizzle-kit push",
+    "db:seed": "bun ./src/db/seed.ts"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^1.5.0",

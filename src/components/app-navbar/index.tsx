@@ -27,19 +27,17 @@ export default function AppNavbar() {
       label: "Home",
       href: "/",
     },
+    {
+      label: "Markets",
+      href: "/markets",
+    },
   ];
 
   if (status === "authenticated") {
-    menuItems.push(
-      {
-        label: "Profile",
-        href: "/profile",
-      },
-      {
-        label: "Guestbook",
-        href: "/guestbook",
-      }
-    );
+    menuItems.push({
+      label: "Profile",
+      href: "/profile",
+    });
   }
 
   return (
@@ -51,7 +49,7 @@ export default function AppNavbar() {
         />
         <NavbarBrand>
           <IconPackage />
-          <p className="font-bold text-inherit">Next.js Starter</p>
+          <p className="font-bold text-inherit">PropoFolio</p>
         </NavbarBrand>
       </NavbarContent>
 
